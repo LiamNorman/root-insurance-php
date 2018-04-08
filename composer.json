@@ -1,0 +1,33 @@
+{
+    "name": "liamnorman/root-insurance-php",
+    "description": "Root insurance API wrapper built with PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LiamNorman",
+            "email": "liamworkza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/http": "^5.7@dev",
+        "vlucas/phpdotenv": "^2.5@dev"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RootAPI\\": "RootAPI/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
