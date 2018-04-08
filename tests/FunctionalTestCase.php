@@ -2,15 +2,13 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Client;
 
-abstract class FunctionalTestCase extends BaseTestCase
+abstract class FunctionalTestCase extends \PHPUnit\Framework\TestCase
 {
-    use CreatesApplication;
 
     /**
      * Get new mock Guzzle client
